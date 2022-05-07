@@ -66,8 +66,8 @@ const Navigation = styled.div`
   height: 30px;
   width: auto;
   background-color: #f5f5f5;
-  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   @media (max-width: 688px) {
     display: none;
   }

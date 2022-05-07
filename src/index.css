@@ -19,3 +19,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.getProducts h1 {
+  text-align: center;
+  font-size: 16px;
+  max-height: 300px;
+  margin-top: 30px;
+  color: black;
+}

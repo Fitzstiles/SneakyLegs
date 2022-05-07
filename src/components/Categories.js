@@ -1,21 +1,43 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import items from "./Db";
 
 const Categories = () => {
   return (
     <Category>
       <h1>CATEGORIES</h1>
-      <Link to="/womenshoe">
-        <div className="img-container">
-          <div className="single__image">
-            <img className="main__image" src="./images/shoe7.jpg" alt="" />
-          </div>
-          <div className="productname">
-            <p>Women shoes</p>
-          </div>
+      <div className="container">
+        <div className="image__container">
+          <img
+            src="./images/shoe7.jpg"
+            style={{ width: "300px", margin: "10px", borderRadius: "10px" }}
+            alt=""
+          />
+          <span>WOMEN SNEAKERS</span>
         </div>
-      </Link>
+        <div className="image__container">
+          <img
+            src="./images/shoeess.jpg"
+            style={{ width: "300px", margin: "10px", borderRadius: "10px" }}
+            alt=""
+          />
+          <span>MEN SNEAKERS</span>
+        </div>
+        <div className="image__container">
+          <img
+            src="./images/shoe5.jpg"
+            style={{ width: "300px", margin: "10px", borderRadius: "10px" }}
+            alt=""
+          />
+          <span>BEST SELLING</span>
+        </div>
+        <div className="image__container">
+          <img
+            src="./images/shoe44.jpg"
+            style={{ width: "300px", margin: "10px", borderRadius: "10px" }}
+            alt=""
+          />
+          <span> NEW ARRIVALS</span>
+        </div>
+      </div>
     </Category>
   );
 };
@@ -23,49 +45,33 @@ const Categories = () => {
 export default Categories;
 
 const Category = styled.div`
-  max-width: 1000px;
-  margin: auto;
+  background-color: #f5f5f5;
 
   h1 {
     text-align: center;
-    font-size: 16px;
-    max-height: 300px;
-    margin-top: 30px;
-    color: black;
-    /* font-weight: 200; */
+    margin: 0;
   }
-
-  .img-container {
+  .container {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
-    width: auto;
-    overflow-x: hidden;
-    margin-top: 30px;
-    .main__image {
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    gap: 20px;
+    height: auto;
+    .image__container {
       position: relative;
-    }
-    .productname {
-      position: absolute;
-      margin-top: 290px;
-      margin-right: 160px;
-      background-color: maroon;
-      border-radius: 10px;
-      p {
+      span {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        z-index: 1;
         color: white;
-        padding: 0 20px;
+        background-color: maroon;
+        padding: 10px 20px;
+        border-radius: 10px;
       }
-    }
-
-    img {
-      max-width: 300px;
-      padding: 20px;
-      transition: 0.3s ease-in-out;
-      border-radius: 40px;
-      /* :hover {
-        transform: translateY(-10px);
-      } */
     }
   }
 `;
