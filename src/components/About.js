@@ -90,13 +90,13 @@ const Abouts = styled.div`
       font-weight: 200;
       color: black;
       font-size: 20px;
+      padding-top: 20px;
     }
   }
   .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
     width: 100%;
     @media (max-width: 830px) {
       display: flex;
@@ -108,6 +108,7 @@ const Abouts = styled.div`
     line-height: 25px;
     text-align: center;
     margin: 10px 0;
+    max-width: 200px;
 
     h3 {
       color: black;
@@ -115,9 +116,6 @@ const Abouts = styled.div`
     }
     p {
       font-size: 20px;
-    }
-    @media (max-width: 830px) {
-      width: 200px;
     }
     .icons {
       display: flex;

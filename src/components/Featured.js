@@ -17,7 +17,7 @@ const Featured = () => {
           </p>
           <p>
             Originally made of rubber, with a perforated design,almond toe and
-            slip on style. these ...see more
+            slip on style.
           </p>
           <p>
             PRICE: <strong>$451.00</strong>
