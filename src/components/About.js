@@ -117,7 +117,7 @@ const Abouts = styled.div`
       font-size: 20px;
     }
     @media (max-width: 830px) {
-      width: 180px;
+      width: 200px;
     }
     .icons {
       display: flex;

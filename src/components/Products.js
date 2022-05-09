@@ -1,5 +1,11 @@
 const Products = () => {
-  return <h1>I am the products page</h1>;
+  return (
+    <div className="container">
+      <div className="image-container">
+        <h1>I am the product page</h1>
+      </div>
+    </div>
+  );
 };
 
 export default Products;

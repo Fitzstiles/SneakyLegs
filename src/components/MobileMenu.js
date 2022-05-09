@@ -53,6 +53,7 @@ const Mobilenav = styled.div`
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   padding: 10px;
   min-height: 50px;
+  width: auto;
   display: none;
   background-color: #f5f5f5;
   @media (max-width: 688px) {

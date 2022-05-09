@@ -1,6 +1,7 @@
 import Hero from "./Hero";
 import About from "./About";
 import Categories from "./Categories";
+import Featured from "./Featured";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <About />
       <Categories />
+      <Featured />
     </div>
   );
 };

@@ -35,8 +35,10 @@ const Header = () => {
         </div>
         <div className="icons">
           <Link to="/cart">
-            {" "}
-            <img src="./images/cart.png" width={"30px"} alt="" />
+            <div className="cart">
+              <img src="./images/cart.png" width={"30px"} alt="" />
+              <span>0</span>
+            </div>
           </Link>
 
           <img
@@ -99,6 +101,7 @@ const Navigation = styled.div`
     align-items: center;
     a {
       margin-right: 10px;
+      position: relative;
       :hover {
         color: #c55e20;
       }
@@ -107,6 +110,7 @@ const Navigation = styled.div`
       border-radius: 20px;
       padding: 8px 10px;
       background-color: #eeeeee;
+      margin-right: 10px;
     }
     input {
       outline: none;
@@ -117,6 +121,13 @@ const Navigation = styled.div`
       display: flex;
       align-items: center;
       gap: 3px;
+      .cart {
+        position: relative;
+        span {
+          position: absolute;
+          top: 0;
+        }
+      }
     }
     .icons > img {
       margin-left: 10px;

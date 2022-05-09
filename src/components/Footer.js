@@ -63,6 +63,7 @@ const Foot = styled.div`
   padding: 20px 0;
   line-height: 40px;
   font-size: 15px;
+  height: 100%;
   .icon {
     display: flex;
     align-items: center;

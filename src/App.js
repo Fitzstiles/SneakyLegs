@@ -5,7 +5,9 @@ import Header from "./components/Header";
 import Products from "./components/Products";
 import MobileMenu from "./components/MobileMenu";
 import Cart from "./components/Cart";
-import WomenShoes from "./components/WomenShoes";
+import WomenSneakers from "./components/WomenSneakers";
+import MenSneakers from "./components/MenSneakers";
+import BestSelling from "./components/BestSelling";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/products" element={<Products />}></Route>
           <Route path="/cart" element={<Cart />}></Route>
-          <Route path="/womenshoe" element={<WomenShoes />}></Route>
+          <Route path="/WomenSneakers" element={<WomenSneakers />}></Route>
+          <Route path="/mensneakers" element={<MenSneakers />}></Route>
+          <Route path="/bestselling" element={<BestSelling />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

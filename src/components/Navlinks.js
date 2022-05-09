@@ -1,56 +1,26 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
 const Navlinks = ({ HandleCloseOnClicked }) => {
-  const animateFrom = { x: 200 };
-  const animateTo = { x: 0 };
-  const exit = { x: -200 };
   return (
     <MobileLinks>
-      <motion.ul
-        initial={animateFrom}
-        animate={animateTo}
-        transition={{ duration: 0.4 }}
-        exit={exit}
-      >
-        <motion.li
-          initial={animateFrom}
-          animate={animateTo}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          onClick={HandleCloseOnClicked}
-        >
+      <ul>
+        <li onClick={HandleCloseOnClicked}>
           <Link to="/">Home</Link>
-        </motion.li>
+        </li>
 
-        <motion.li
-          initial={animateFrom}
-          animate={animateTo}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          onClick={HandleCloseOnClicked}
-        >
+        <li onClick={HandleCloseOnClicked}>
           <Link to="/products">Products</Link>
-        </motion.li>
+        </li>
 
-        <motion.li
-          initial={animateFrom}
-          animate={animateTo}
-          transition={{ duration: 0.7, delay: 0.1 }}
-          onClick={HandleCloseOnClicked}
-        >
+        <li onClick={HandleCloseOnClicked}>
           <Link to="/">Featured</Link>
-        </motion.li>
+        </li>
 
-        <motion.li
-          initial={animateFrom}
-          animate={animateTo}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          exit={exit}
-          onClick={HandleCloseOnClicked}
-        >
+        <li onClick={HandleCloseOnClicked}>
           <Link to="/">About us</Link>
-        </motion.li>
-      </motion.ul>
+        </li>
+      </ul>
     </MobileLinks>
   );
 };
