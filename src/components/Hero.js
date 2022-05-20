@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./hero.css";
 const HeroSection = () => {
   return (
-    <div className="small__container">
+    <div className="hero__container">
       <div className="bg__img">
         <img src="./images/hero_bg.jpg" alt="" />
       </div>

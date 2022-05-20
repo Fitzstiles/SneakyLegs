@@ -25,7 +25,7 @@ const About = () => {
           </div>
           <h3>Quick Delivery</h3>
           <div className="text">
-            <p>Get your items shipped to you within minutes</p>
+            <p>Get your items shipped to you within minutes.</p>
           </div>
         </div>
         <div className="small__container">
@@ -46,7 +46,7 @@ const About = () => {
           </div>
           <h3>SECURED PAYMENT</h3>
           <div className="text">
-            <p>Get your items shipped to you within minutes</p>
+            <p>All modes of payments are safe and trusted.</p>
           </div>
         </div>
 
@@ -68,7 +68,7 @@ const About = () => {
           </div>
           <h3>AUTHENCITY GUARANTEED</h3>
           <div className="text">
-            <p>Get your items shipped to you within minutes</p>
+            <p>Products sold at sneakylegs are 100% original.</p>
           </div>
         </div>
       </div>
@@ -113,9 +113,6 @@ const Abouts = styled.div`
     h3 {
       color: black;
       margin: 10px 0;
-    }
-    p {
-      font-size: 20px;
     }
     .icons {
       display: flex;

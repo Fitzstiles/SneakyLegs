@@ -46,7 +46,7 @@ const Testimonial = () => {
             </div>
           </div>
           <p>
-            The deliver expressly, got my sneakers the same day I placed the
+            They deliver expressly, got my sneakers the same day I placed the
             order. also love how original the product is.
           </p>
         </div>
