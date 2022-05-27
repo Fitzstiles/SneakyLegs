@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useStateValue } from "./stateManagement/StateContext";
 
 const Header = () => {
+  const [{ cart }, dispatch] = useStateValue();
   return (
     <Navigation>
       <Link to="/">
@@ -10,14 +12,15 @@ const Header = () => {
             <p>S</p>
             <span>L</span>
           </div>
+          <small>sneakylegs</small>
         </div>
       </Link>
 
       <div className="nav__items">
         <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
-        <Link to="/">Featured</Link>
-        <Link to="/">About us</Link>
+        <a href="#featured">Featured</a>
+        <a href="#about">About us</a>
 
         <div className="input__section">
           <input type="text" placeholder="Search" />
@@ -36,8 +39,8 @@ const Header = () => {
         <div className="icons">
           <Link to="/cart">
             <div className="cart">
-              <img src="./images/cart.png" width={"30px"} alt="" />
-              <span>0</span>
+              <img src="./images/cart.png" width={"20px"} alt="" />
+              <span>{cart?.length}</span>
             </div>
           </Link>
 
@@ -49,6 +52,7 @@ const Header = () => {
               borderRadius: "50%",
               objectFit: "cover",
               cursor: "pointer",
+              margin: "0",
             }}
             alt=""
           />
@@ -61,6 +65,9 @@ const Header = () => {
 export default Header;
 
 const Navigation = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   padding: 15px;
@@ -70,7 +77,7 @@ const Navigation = styled.div`
   background-color: #f5f5f5;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  @media (max-width: 688px) {
+  @media (max-width: 775px) {
     display: none;
   }
 
@@ -93,7 +100,7 @@ const Navigation = styled.div`
     }
     span {
       color: white;
-      margin-top: 10px;
+      margin-top: 8px;
     }
   }
   .nav__items {
@@ -124,8 +131,15 @@ const Navigation = styled.div`
       .cart {
         position: relative;
         span {
+          text-align: center;
           position: absolute;
-          top: 0;
+          top: -8px;
+          left: -4px;
+          background-color: #e52a21;
+          color: white;
+          width: 15px;
+          border-radius: 50%;
+          font-size: 10px;
         }
       }
     }

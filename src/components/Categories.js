@@ -4,29 +4,29 @@ import styled from "styled-components";
 const Categories = () => {
   return (
     <Category>
-      <h1>CATEGORIES</h1>
+      <h2>CATEGORIES</h2>
       <div className="container">
         <Link to="/WomenSneakers">
           <div className="image__container">
             <img src="./images/shoe7.jpg" alt="" />
-            <span>WOMEN SNEAKERS</span>
+            <span style={{ backgroundColor: "#CDAFA5" }}>WOMEN SNEAKERS</span>
           </div>
         </Link>
         <Link to="/mensneakers">
           <div className="image__container">
             <img src="./images/shoeess.jpg" alt="" />
-            <span>MEN SNEAKERS</span>
+            <span style={{ backgroundColor: "#FFFFFF" }}>MEN SNEAKERS</span>
           </div>
         </Link>
         <Link to="/bestselling">
           <div className="image__container">
             <img src="./images/shoe5.jpg" alt="" />
-            <span>BEST SELLING</span>
+            <span style={{ backgroundColor: "#A4A4A4" }}>BEST SELLING</span>
           </div>
         </Link>
         <div className="image__container">
           <img src="./images/shoe44.jpg" alt="" />
-          <span> NEW ARRIVALS</span>
+          <span style={{ backgroundColor: "#AC8067" }}> NEW ARRIVALS</span>
         </div>
       </div>
     </Category>
@@ -37,40 +37,46 @@ export default Categories;
 
 const Category = styled.div`
   background-color: #f5f5f5;
-  h1 {
+  h2 {
     text-align: center;
     margin: 0;
+    font-weight: 200;
+    color: black;
   }
   .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 20px;
     overflow: hidden;
-    gap: 20px;
     height: auto;
     .image__container {
       position: relative;
+      width: 300px;
+      height: 200px;
+      padding: 20px;
       img {
-        width: 300px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         margin: 10px;
-        border-radius: 20px;
+        border-radius: 10px;
         transition: 0.3s ease-in-out;
         :hover {
-          transform: translateY(-20px);
+          transform: scale(1.1);
         }
       }
       span {
         position: absolute;
-        bottom: 35px;
-        left: 10px;
+        bottom: 40px;
+        font-size: 12px;
+        left: 30px;
         z-index: 1;
-        color: white;
-        background-color: maroon;
-        padding: 10px 20px;
-        border-radius: 10px;
+        color: black;
+        padding: 5px 10px;
+        border-radius: 2px;
       }
     }
   }

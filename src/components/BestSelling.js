@@ -97,7 +97,7 @@ const BestsellingContainer = styled.div`
   .link__container {
     display: flex;
     justify-content: center;
-    padding-top: 80px;
+    padding: 80px 0;
     a {
       background-color: #c4c3c8;
       padding: 10px 25px;

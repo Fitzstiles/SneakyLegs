@@ -33,6 +33,7 @@ const MobileMenu = () => {
               <p>S</p>
               <span>L</span>
             </div>
+            <small>sneakylegs</small>
           </div>
         </div>
       </Link>
@@ -49,14 +50,17 @@ const MobileMenu = () => {
 export default MobileMenu;
 
 const Mobilenav = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 100;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   padding: 10px;
-  min-height: 50px;
+  height: 50px;
   width: auto;
   display: none;
   background-color: #f5f5f5;
-  @media (max-width: 688px) {
+  @media (max-width: 775px) {
     display: block;
   }
   .small__container {
@@ -84,7 +88,7 @@ const Mobilenav = styled.div`
     }
     span {
       color: white;
-      margin-top: 10px;
+      margin-top: 8px;
     }
   }
   .handleClicks {

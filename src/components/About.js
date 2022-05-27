@@ -88,7 +88,7 @@ const Abouts = styled.div`
     text-transform: uppercase;
     h1 {
       font-weight: 200;
-      color: black;
+      color: rgb(70, 65, 65);
       font-size: 20px;
       padding-top: 20px;
     }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Footer = () => {
   return (
-    <Foot>
+    <Foot id="about">
       <div className="icon">
         <div className="icon__bg">
           <p>SL</p>
@@ -17,7 +17,7 @@ const Footer = () => {
             <p>15 Palm Hall Street, Lekki phase 1,Lagos,Nigeria</p>
             <p>
               <img src="" alt="" />
-              (+234) 1234 5678)
+              (+234) 1234 5678
             </p>
           </div>
         </div>

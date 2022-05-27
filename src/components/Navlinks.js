@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const Navlinks = ({ HandleCloseOnClicked }) => {
   return (
@@ -14,11 +15,11 @@ const Navlinks = ({ HandleCloseOnClicked }) => {
         </li>
 
         <li onClick={HandleCloseOnClicked}>
-          <Link to="/">Featured</Link>
+          <a href="#featured">Featured</a>
         </li>
 
         <li onClick={HandleCloseOnClicked}>
-          <Link to="/">About us</Link>
+          <a href="#about">About us</a>
         </li>
       </ul>
     </MobileLinks>
@@ -35,9 +36,9 @@ const MobileLinks = styled.div`
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   left: 0;
   top: 70px;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  z-index: 1;
+  z-index: 100;
   ul {
     margin-top: 30px;
   }
