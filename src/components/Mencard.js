@@ -1,32 +1,30 @@
-import "./productcard.css";
 import { useStateValue } from "./stateManagement/StateContext";
+import "./productcard.css";
 
-const ProductCard = ({ product }) => {
+const MenCard = ({ filteredPerson }) => {
   const [state, dispatch] = useStateValue();
 
   const addTocart = () => {
-    // totalUpdate();
     dispatch({
       type: "ADD_TO_CART",
-      payload: product,
+      payload: filteredPerson,
     });
   };
-
   return (
     <div className="productCard__wrapper">
       <div className="productCard__image">
-        <img src={product.image} alt="" />
+        <img src={filteredPerson.image} alt="" />
         <span>love</span>
         <p>
           <small style={{ color: "white" }}>$</small>
-          {product.price}
+          {filteredPerson.price}
         </p>
       </div>
       <div className="productCard__details">
-        <h4>{product.name}</h4>
+        <h4>{filteredPerson.name}</h4>
         <button onClick={addTocart}>Add to cart</button>
         <div className="rating">
-          {Array(product.rating)
+          {Array(filteredPerson.rating)
             .fill()
             .map((_, i) => (
               <p>*</p>
@@ -37,4 +35,4 @@ const ProductCard = ({ product }) => {
   );
 };
 
-export default ProductCard;
+export default MenCard;

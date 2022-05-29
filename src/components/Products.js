@@ -5,12 +5,10 @@ import "./productcard.css";
 const Products = () => {
   return (
     <div className="AllProduct__container">
-      <div className="product__bg">
-        <div className="product__container">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+      <div className="product__container">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
       </div>
     </div>
   );

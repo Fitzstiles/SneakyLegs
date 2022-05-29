@@ -98,7 +98,7 @@ const Abouts = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    @media (max-width: 830px) {
+    @media (max-width: 760px) {
       display: flex;
       flex-direction: column;
       align-items: center;

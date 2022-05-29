@@ -2,14 +2,16 @@ import "./cart.css";
 import { useStateValue } from "./stateManagement/StateContext";
 const CartItems = ({ item }) => {
   const [state, dispatch] = useStateValue();
+
   const removeFromCart = () => {
     dispatch({
       type: "REMOVE_FROM_CART",
       id: item.id,
     });
   };
+
   return (
-    <div className="cart__items">
+    <div>
       <div className="leftCart">
         <div className="image">
           <img
