@@ -6,7 +6,8 @@ const Footer = () => {
     <Foot id="about">
       <div className="icon">
         <div className="icon__bg">
-          <p>SL</p>
+          <p>S</p>
+          <span>L</span>
         </div>
         <a href="/">SneakyLegs</a>
       </div>
@@ -63,7 +64,6 @@ const Foot = styled.div`
   padding: 20px 0;
   line-height: 40px;
   font-size: 15px;
-  height: 100%;
   .icon {
     display: flex;
     align-items: center;
@@ -80,6 +80,10 @@ const Foot = styled.div`
     align-items: center;
 
     p {
+      color: #c55e20;
+    }
+    span {
+      margin-top: 8px;
       color: #c55e20;
     }
   }

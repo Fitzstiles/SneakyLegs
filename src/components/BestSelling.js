@@ -99,11 +99,18 @@ const BestsellingContainer = styled.div`
     justify-content: center;
     padding: 80px 0;
     a {
-      background-color: #c4c3c8;
+      border: 1px solid #c4c3c8;
+      background-color: transparent;
       padding: 10px 25px;
       border-radius: 10px;
       margin-right: 20px;
-      color: black;
+      color: #c4c3c8;
+      transition: 0.3s;
+
+      :hover {
+        background-color: #c4c3c8;
+        color: black;
+      }
     }
   }
 `;
