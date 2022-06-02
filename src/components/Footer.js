@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Footer = () => {
   return (
-    <Foot id="about">
+    <Foot data-aos="fade-up" id="about">
       <div className="icon">
         <div className="icon__bg">
           <p>S</p>

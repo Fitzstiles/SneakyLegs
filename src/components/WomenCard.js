@@ -1,4 +1,6 @@
 import { useStateValue } from "./stateManagement/StateContext";
+import StarRateIcon from "@mui/icons-material/StarRate";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import "./productcard.css";
 
 const Women = ({ filteredPerson }) => {
@@ -15,7 +17,9 @@ const Women = ({ filteredPerson }) => {
     <div className="productCard__wrapper">
       <div className="productCard__image">
         <img src={filteredPerson.image} alt="" />
-        <span>love</span>
+        <FavoriteBorderIcon
+          style={{ position: "absolute", top: 20, right: 20 }}
+        />
         <p>
           <small style={{ color: "white" }}>$</small>
           {filteredPerson.price}
@@ -28,7 +32,7 @@ const Women = ({ filteredPerson }) => {
           {Array(filteredPerson.rating)
             .fill()
             .map((_, i) => (
-              <p>*</p>
+              <StarRateIcon style={{ fill: "#F7AB09" }} />
             ))}
         </div>
       </div>

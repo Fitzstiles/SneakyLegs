@@ -1,13 +1,14 @@
 import styled from "styled-components";
+
 const About = () => {
   return (
-    <Abouts>
+    <Abouts data-aos="fade-up">
       <div className="banner">
         <h1>Why shop sneakylegs</h1>
       </div>
 
       <div className="container">
-        <div className="small__container">
+        <div data-aos="fade-up" className="small__container">
           <div className="icons">
             <div className="icons__bg">
               <svg
@@ -28,7 +29,7 @@ const About = () => {
             <p>Get your items shipped to you within minutes.</p>
           </div>
         </div>
-        <div className="small__container">
+        <div data-aos="fade-up" className="small__container">
           <div className="icons">
             <div className="icons__bg">
               <svg
@@ -50,7 +51,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="small__container">
+        <div data-aos="fade-up" className="small__container">
           <div className="icons">
             <div className="icons__bg">
               <svg

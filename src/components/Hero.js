@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
+import { motion } from "framer-motion";
 import "./hero.css";
 const HeroSection = () => {
   return (
@@ -7,20 +9,38 @@ const HeroSection = () => {
         <img src="./images/hero_bg.jpg" alt="" />
       </div>
       <div className="textarea">
-        <div className="bold__text">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+          className="bold__text"
+        >
           <h1>
             Run Your World With the Right <span>Shoes</span>
           </h1>
-        </div>
-        <div className="middle__text">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2 }}
+          className="middle__text"
+        >
           <p>
             Never be caught unfresh at any moment, follow the ever evolving
             fashion and get the right sneakers today.
           </p>
-        </div>
-        <div className="btn">
-          <Link to="/products">SHOP NOW</Link>
-        </div>
+        </motion.div>
+        <motion.div
+          initial={{ y: "100vw" }}
+          animate={{ y: 0 }}
+          transition={{ delay: 3, type: "tween" }}
+          className="btn"
+        >
+          <Link to="/products">
+            <LocalMallIcon style={{ fill: "#c55e20" }} />
+            SHOP NOW
+          </Link>
+        </motion.div>
       </div>
     </div>
   );

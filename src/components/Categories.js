@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 const Categories = () => {
   return (
-    <Category>
+    <Category data-aos="fade-up">
       <h2>CATEGORIES</h2>
-      <div className="container">
+      <div data-aos="fade-up" className="container">
         <Link to="/WomenSneakers">
           <div className="image__container">
             <img src="./images/shoe7.jpg" alt="" />
@@ -13,18 +13,18 @@ const Categories = () => {
           </div>
         </Link>
         <Link to="/mensneakers">
-          <div className="image__container">
+          <div data-aos="fade-up" className="image__container">
             <img src="./images/shoeess.jpg" alt="" />
             <span style={{ backgroundColor: "#FFFFFF" }}>MEN SNEAKERS</span>
           </div>
         </Link>
         <Link to="/bestselling">
-          <div className="image__container">
+          <div data-aos="fade-up" className="image__container">
             <img src="./images/shoe5.jpg" alt="" />
             <span style={{ backgroundColor: "#A4A4A4" }}>BEST SELLING</span>
           </div>
         </Link>
-        <div className="image__container">
+        <div data-aos="fade-up" className="image__container">
           <img src="./images/shoe44.jpg" alt="" />
           <span style={{ backgroundColor: "#AC8067" }}> NEW ARRIVALS</span>
         </div>

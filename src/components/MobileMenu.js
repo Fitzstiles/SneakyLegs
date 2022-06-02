@@ -1,26 +1,17 @@
 import styled from "styled-components";
 import { useState } from "react";
 import Navlinks from "./Navlinks";
+import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
 const MobileMenu = () => {
   const [open, setopen] = useState(false);
   const toggleNav = (
-    <img
-      src="./images/hamburger.png"
-      width={"50px"}
-      onClick={() => setopen(!open)}
-      alt=""
-    />
+    <MenuIcon onClick={() => setopen(!open)} style={{ fontSize: 50 }} />
   );
-
   const closeNav = (
-    <img
-      src="./images/close.png"
-      style={{ width: "25px", marginTop: "10px" }}
-      onClick={() => setopen(!open)}
-      alt=""
-    />
+    <CloseIcon onClick={() => setopen(!open)} style={{ fontSize: 50 }} />
   );
 
   const HandleCloseOnClicked = () => setopen(false);

@@ -42,15 +42,18 @@
 
 .middle__text p {
   color: white;
+  padding-bottom: 20px;
 }
 
 .btn {
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
-  width: 100px;
-  text-align: center;
-  padding: 15px 30px;
+  width: 130px;
   border-radius: 10px;
+  padding: 5px 10px;
+  height: 100%;
 }
 
 .btn>a {

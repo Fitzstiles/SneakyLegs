@@ -4,7 +4,7 @@ const Testimonial = () => {
     <div className="comment__container">
       <h2>TESTIMONIALS</h2>
       <div className="comment__session">
-        <div className="testimonial__container">
+        <div data-aos="fade-right" className="testimonial__container">
           <div className="testimonial__header">
             <div className="comment__image">
               <img
@@ -27,7 +27,7 @@ const Testimonial = () => {
             lasting and pretty inexpensive
           </p>
         </div>
-        <div className="testimonial__container">
+        <div data-aos="fade-right" className="testimonial__container">
           <div className="testimonial__header">
             <div className="comment__image">
               <img
@@ -40,7 +40,7 @@ const Testimonial = () => {
                 alt=""
               />
             </div>
-            <div className="comment__details">
+            <div data-aos="fade-right" className="comment__details">
               <h4>Bolatito</h4>
               <p>Nigeria</p>
             </div>
@@ -50,7 +50,7 @@ const Testimonial = () => {
             order. also love how original the product is.
           </p>
         </div>
-        <div className="testimonial__container">
+        <div data-aos="fade-right" className="testimonial__container">
           <div className="testimonial__header">
             <div className="comment__image">
               <img

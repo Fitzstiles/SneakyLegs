@@ -8,8 +8,11 @@ import Cart from "./components/Cart";
 import WomenSneakers from "./components/WomenSneakers";
 import MenSneakers from "./components/MenSneakers";
 import BestSelling from "./components/BestSelling";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  AOS.init();
   return (
     <div className="App">
       <BrowserRouter>

@@ -1,26 +1,49 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navlinks = ({ HandleCloseOnClicked }) => {
   return (
     <MobileLinks>
-      <ul>
-        <li onClick={HandleCloseOnClicked}>
-          <Link to="/">Home</Link>
-        </li>
+      <AnimatePresence>
+        <motion.ul animate={{ y: 10 }}>
+          <motion.li
+            initial={{ x: "100vw" }}
+            animate={{ x: 0 }}
+            transition={{ delay: 0.2 }}
+            onClick={HandleCloseOnClicked}
+          >
+            <Link to="/">Home</Link>
+          </motion.li>
 
-        <li onClick={HandleCloseOnClicked}>
-          <Link to="/products">Products</Link>
-        </li>
+          <motion.li
+            initial={{ x: "100vw" }}
+            animate={{ x: 0 }}
+            transition={{ delay: 0.3 }}
+            onClick={HandleCloseOnClicked}
+          >
+            <Link to="/products">Products</Link>
+          </motion.li>
 
-        <li onClick={HandleCloseOnClicked}>
-          <a href="#featured">Featured</a>
-        </li>
+          <motion.li
+            initial={{ x: "100vw" }}
+            animate={{ x: 0 }}
+            transition={{ delay: 0.4 }}
+            onClick={HandleCloseOnClicked}
+          >
+            <a href="#featured">Featured</a>
+          </motion.li>
 
-        <li onClick={HandleCloseOnClicked}>
-          <a href="#about">About us</a>
-        </li>
-      </ul>
+          <motion.li
+            initial={{ x: "100vw" }}
+            animate={{ x: 0 }}
+            transition={{ delay: 0.5 }}
+            onClick={HandleCloseOnClicked}
+          >
+            <a href="#about">About us</a>
+          </motion.li>
+        </motion.ul>
+      </AnimatePresence>
     </MobileLinks>
   );
 };
@@ -47,5 +70,6 @@ const MobileLinks = styled.div`
     font-size: 30px;
     font-weight: bold;
     width: 100%;
+    overflow: hidden;
   }
 `;
