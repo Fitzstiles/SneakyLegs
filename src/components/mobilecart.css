@@ -13,14 +13,13 @@
 .mobilecart span {
     position: absolute;
     color: white;
-    top: 2px;
+    top: 4px;
     right: 10px;
     background-color: red;
     border-radius: 50%;
     display: grid;
     place-items: center;
     width: 2ch;
-    /* font-size: 14px; */
 }
 
 @media (max-width:775px) {

@@ -15,6 +15,7 @@
 .featured__container {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
   gap: 50px;
@@ -94,5 +95,9 @@
 @media (max-width: 755px) {
   .featured__left {
     max-width: 100%;
+  }
+
+  .featured__container {
+    flex-direction: column-reverse;
   }
 }
