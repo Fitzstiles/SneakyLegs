@@ -1,8 +1,31 @@
 .mobilecart {
     position: relative;
+    position: fixed;
+    bottom: 20%;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    background-color: #c55e20;
+    border-radius: 50%;
+    display: none;
 }
 
-.mobilecart {
+.mobilecart span {
     position: absolute;
-    color: red;
+    color: white;
+    top: 2px;
+    right: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    width: 2ch;
+    /* font-size: 14px; */
+}
+
+@media (max-width:775px) {
+    .mobilecart {
+        display: grid;
+        place-items: center;
+    }
 }

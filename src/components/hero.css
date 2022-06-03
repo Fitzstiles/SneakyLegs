@@ -20,7 +20,7 @@
 }
 
 .textarea {
-  padding: 50px;
+  padding: 60px 50px;
 }
 
 .bold__text {
@@ -59,6 +59,7 @@
 .btn>a {
   color: #c55e20;
   font-weight: 500;
+  padding: 5px 10px;
 }
 
 @media (min-width: 840px) {

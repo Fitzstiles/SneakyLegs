@@ -11,14 +11,12 @@ import BestSelling from "./components/BestSelling";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MobileCart from "./components/MobileCart";
-import ScrollToTop from "./components/MobileCart";
 
 function App() {
   AOS.init();
   return (
     <div className="App">
       <BrowserRouter>
-        <ScrollToTop />
         <Header />
         <MobileMenu />
         <Routes>
@@ -28,9 +26,10 @@ function App() {
           <Route path="/WomenSneakers" element={<WomenSneakers />}></Route>
           <Route path="/mensneakers" element={<MenSneakers />}></Route>
           <Route path="/bestselling" element={<BestSelling />}></Route>
+          <Route element={<BestSelling />}></Route>
         </Routes>
-        <MobileCart />
         <Footer />
+        <MobileCart />
       </BrowserRouter>
     </div>
   );
