@@ -17,8 +17,8 @@ const MobileMenu = () => {
   const HandleCloseOnClicked = () => setopen(false);
   return (
     <Mobilenav>
-      <Link to="/">
-        <div className="small__container">
+      <div className="small__container">
+        <Link to="/">
           <div className="logo">
             <div className="logo_bg">
               <p>S</p>
@@ -26,8 +26,8 @@ const MobileMenu = () => {
             </div>
             <small>sneakylegs</small>
           </div>
-        </div>
-      </Link>
+        </Link>
+      </div>
 
       <div className="handleClicks">{open ? closeNav : toggleNav}</div>
 

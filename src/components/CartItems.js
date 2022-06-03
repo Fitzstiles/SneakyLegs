@@ -17,7 +17,7 @@ const CartItems = ({ item }) => {
           <img
             src={item.image}
             alt=""
-            style={{ width: "100px", borderRadius: "10px" }}
+            style={{ width: "100px", borderRadius: "10px", paddingBottom: 20 }}
           />
         </div>
         <div className="leftCart__details">

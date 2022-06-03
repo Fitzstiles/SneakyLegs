@@ -35,7 +35,7 @@ const BestSelling = () => {
     startTimer();
   });
   return (
-    <BestsellingContainer>
+    <BestsellingContainer data-aos="fade-up">
       <div className="bestselling__container">
         <Countdown
           timerDays={timerDays}
@@ -56,7 +56,7 @@ const BestSelling = () => {
           <h2>70% off</h2>
         </div>
       </div>
-      <div className="link__container" data-aos="fade-right">
+      <div className="link__container">
         <Link to="/"> BUY NOW</Link>
       </div>
     </BestsellingContainer>

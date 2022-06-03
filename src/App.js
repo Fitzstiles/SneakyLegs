@@ -11,12 +11,14 @@ import BestSelling from "./components/BestSelling";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MobileCart from "./components/MobileCart";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   AOS.init();
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <MobileMenu />
         <Routes>
