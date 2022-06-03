@@ -1,5 +1,6 @@
 import CartItems from "./CartItems";
 import { useStateValue } from "./stateManagement/StateContext";
+
 import "./cart.css";
 
 const Carts = () => {

@@ -56,7 +56,7 @@ const BestSelling = () => {
           <h2>70% off</h2>
         </div>
       </div>
-      <div className="link__container">
+      <div className="link__container" data-aos="fade-right">
         <Link to="/"> BUY NOW</Link>
       </div>
     </BestsellingContainer>
