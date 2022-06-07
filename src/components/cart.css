@@ -28,6 +28,7 @@
 .leftCart {
     display: flex;
     gap: 20px;
+
 }
 
 .leftCart p {

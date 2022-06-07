@@ -53,11 +53,15 @@ const BestSelling = () => {
             }}
             alt=""
           />
-          <h2>70% off</h2>
+          <h2>50% off</h2>
         </div>
       </div>
       <div className="link__container">
         <Link to="/"> BUY NOW</Link>
+      </div>
+      <div className="pricce">
+        <p>$200</p>
+        <span>$400</span>
       </div>
     </BestsellingContainer>
   );
@@ -111,6 +115,21 @@ const BestsellingContainer = styled.div`
         background-color: #c4c3c8;
         color: black;
       }
+    }
+  }
+  .pricce {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    span {
+      text-decoration: line-through;
+    }
+    p {
+      font-size: 30px;
     }
   }
 `;

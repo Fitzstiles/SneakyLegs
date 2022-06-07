@@ -1,13 +1,15 @@
 import { useStateValue } from "./stateManagement/StateContext";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import "./productcard.css";
+import { useState } from "react";
 
 const Women = ({ filteredPerson }) => {
   const [state, dispatch] = useStateValue();
+  const [liked, setLiked] = useState(!false);
 
   const addTocart = () => {
-    // totalUpdate();
     dispatch({
       type: "ADD_TO_CART",
       payload: filteredPerson,
@@ -17,9 +19,30 @@ const Women = ({ filteredPerson }) => {
     <div className="productCard__wrapper">
       <div className="productCard__image">
         <img src={filteredPerson.image} alt="" />
-        <FavoriteBorderIcon
-          style={{ position: "absolute", top: 20, right: 20 }}
-        />
+        {liked ? (
+          <FavoriteBorderIcon
+            onClick={() => setLiked(false)}
+            style={{
+              position: "absolute",
+              top: 20,
+              right: 10,
+              cursor: "pointer",
+              fontSize: 30,
+            }}
+          />
+        ) : (
+          <FavoriteIcon
+            onClick={() => setLiked(true)}
+            style={{
+              position: "absolute",
+              top: 20,
+              right: 10,
+              cursor: "pointer",
+              fill: "red",
+              fontSize: 30,
+            }}
+          />
+        )}
         <p>
           <small style={{ color: "white" }}>$</small>
           {filteredPerson.price}

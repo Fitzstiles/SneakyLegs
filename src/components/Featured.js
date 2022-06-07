@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import "./featured.css";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import { useState } from "react";
 
 const Featured = () => {
+  const [liked, setLiked] = useState(!false);
   return (
     <div data-aos="fade-up" className="featured" id="featured">
       <h2>FEATURED ITEM</h2>
@@ -12,7 +15,7 @@ const Featured = () => {
           <h5>Adidas YEEZY</h5>
           <p>
             Also nicknamed "sand" sneakers, it doesn't get more futuristic than
-            the RNRR "sand" sneaker froms Adidas YEEZY.crafted from EVA foam and
+            the RNRR "sand" sneaker from Adidas YEEZY.crafted from EVA foam and
             harvested algae, this pair is ultra lightweight and one of the
             market most progressive step out in unique style
           </p>
@@ -28,7 +31,22 @@ const Featured = () => {
         </div>
         <div data-aos="zoom-in" className="right">
           <div className="featured__image">
-            <FavoriteBorderIcon />
+            {liked ? (
+              <FavoriteBorderIcon
+                onClick={() => setLiked(false)}
+                style={{
+                  cursor: "pointer",
+                }}
+              />
+            ) : (
+              <FavoriteIcon
+                onClick={() => setLiked(true)}
+                style={{
+                  position: "absolute",
+                  fill: "red",
+                }}
+              />
+            )}
             <img
               src="https://cdn-images.farfetch-contents.com/16/65/80/89/16658089_32552931_480.jpg"
               style={{
