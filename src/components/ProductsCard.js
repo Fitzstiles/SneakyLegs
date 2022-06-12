@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="productCard__wrapper">
+    <div data-aos="fade-up" className="productCard__wrapper">
       <div className="productCard__image">
         <img src={product.image} alt="" />
         {liked ? (

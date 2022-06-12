@@ -61,6 +61,10 @@
     margin-left: 10px;
 }
 
+.productCard__details h4 {
+    max-width: 150px;
+}
+
 .rating {
     display: flex;
     padding: 20px 0;

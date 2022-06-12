@@ -13,7 +13,7 @@ const CartItems = ({ item }) => {
   return (
     <div>
       {cart.length === 0 ? (
-        <h4>Cart is empty</h4>
+        <h4>Your cart is Empty</h4>
       ) : (
         <div className="leftCart">
           <div className="image">
