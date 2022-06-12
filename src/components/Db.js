@@ -55,7 +55,7 @@ const products = [
   },
   {
     id: 7,
-    name: "Men's Shoes Breathable Ins Trendy Sports Mesh Casual Shoes",
+    name: "Sports Mesh Casual Shoes",
     image:
       "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/58/0121221/2.jpg?3185",
     price: 200,
