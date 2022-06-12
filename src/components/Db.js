@@ -126,6 +126,33 @@ const products = [
   },
   {
     id: 15,
+    name: "Sunshine men trendy sneakers",
+    image:
+      "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/92/526223/1.jpg?1191",
+    price: 400,
+    gender: "m",
+    rating: 5,
+  },
+  {
+    id: 16,
+    name: "lightFemale sneaker",
+    image:
+      "https://nypost.com/wp-content/uploads/sites/2/2021/02/1024x1024-Women-LowTop-Lavendar-1_1024x1024.jpeg?quality=90&strip=all&w=1024",
+    price: 200,
+    gender: "f",
+    rating: 3,
+  },
+  {
+    id: 17,
+    name: "Female sneaker",
+    image:
+      "https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/Q/H/193145_1634210833.jpg",
+    price: 400,
+    gender: "f",
+    rating: 5,
+  },
+  {
+    id: 15,
     name: "High Top Leather Sneaker",
     image:
       "https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/B/P/173643_1615148455.jpg",

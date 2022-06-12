@@ -67,3 +67,10 @@
     padding-bottom: 100px;
   }
 }
+
+@media (max-width: 840px) {
+
+  .textarea {
+    padding: 50px;
+  }
+}
