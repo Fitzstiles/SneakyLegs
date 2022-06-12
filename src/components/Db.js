@@ -1,11 +1,11 @@
 const products = [
   {
     id: 1,
-    name: "Nike 2021 tennis shoes",
+    name: "Men's Sports Running Shoes -Multi Color",
     image:
-      "https://i.pinimg.com/236x/b8/da/5f/b8da5f6b2f88e455c5f40fb95e04287d.jpg",
-    price: 200,
-    gender: "f",
+      "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/006249/2.jpg?0364",
+    price: 600,
+    gender: "m",
     rating: 5,
   },
   {
@@ -23,7 +23,7 @@ const products = [
     image:
       "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/83/313829/1.jpg?9724",
     price: 200,
-    gender: "f",
+    gender: "m",
     rating: 3,
   },
   {
@@ -46,12 +46,12 @@ const products = [
   },
   {
     id: 6,
-    name: "Men's Sports Running Shoes -Multi Color",
+    name: "Nike 2021 tennis shoes",
     image:
-      "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/006249/2.jpg?0364",
+      "https://i.pinimg.com/236x/b8/da/5f/b8da5f6b2f88e455c5f40fb95e04287d.jpg",
     price: 200,
-    gender: "m",
-    rating: 5,
+    gender: "f",
+    rating: 3,
   },
   {
     id: 7,

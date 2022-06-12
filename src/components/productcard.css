@@ -10,7 +10,7 @@
 .productCard__image {
     position: relative;
     width: 300px;
-    height: 250px;
+    height: 300px;
 }
 
 .productCard__image img {
@@ -61,8 +61,9 @@
     margin-left: 10px;
 }
 
-.productCard__details h4 {
+.productcard__name {
     max-width: 150px;
+    height: 100px;
 }
 
 .rating {

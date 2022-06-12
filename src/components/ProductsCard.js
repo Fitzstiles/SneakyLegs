@@ -50,7 +50,10 @@ const ProductCard = ({ product }) => {
         </p>
       </div>
       <div className="productCard__details">
-        <h4>{product.name}</h4>
+        <div className="productcard__name">
+          <h4>{product.name}</h4>
+        </div>
+
         <button onClick={addTocart}>Add to cart</button>
         <div className="rating">
           {Array(product.rating)
