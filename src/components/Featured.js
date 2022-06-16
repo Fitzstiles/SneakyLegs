@@ -3,16 +3,24 @@ import "./featured.css";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
+import { useStateValue } from "./stateManagement/StateContext";
 
-const Featured = () => {
+const Featured = ({ featuredItems }) => {
+  const [state, dispatch] = useStateValue();
+  const addTocart = () => {
+    dispatch({
+      type: "ADD_TO_CART",
+      payload: featuredItems,
+    });
+  };
   const [liked, setLiked] = useState(!false);
   return (
     <div data-aos="fade-up" className="featured" id="featured">
       <h2>FEATURED ITEM</h2>
       <div className="featured__container">
         <div data-aos="fade-up" className="featured__left">
-          <h3>New season</h3>
-          <h5>Adidas YEEZY</h5>
+          <h3>{featuredItems.season}</h3>
+          <h5>{featuredItems.name}</h5>
           <p>
             Also nicknamed "sand" sneakers, it doesn't get more futuristic than
             the RNRR "sand" sneaker from Adidas YEEZY.crafted from EVA foam and
@@ -24,10 +32,10 @@ const Featured = () => {
             slip on style.
           </p>
           <p>
-            PRICE: <strong>$451.00</strong>
+            PRICE: <strong>${featuredItems.price}</strong>
           </p>
           <Link to="/"> BUY NOW</Link>
-          <button>ADD TO CART</button>
+          <button onClick={addTocart}>ADD TO CART</button>
         </div>
         <div data-aos="zoom-in" className="right">
           <div className="featured__image">
@@ -48,7 +56,7 @@ const Featured = () => {
               />
             )}
             <img
-              src="https://cdn-images.farfetch-contents.com/16/65/80/89/16658089_32552931_480.jpg"
+              src={featuredItems.image}
               style={{
                 width: "50%",
                 height: "auto",

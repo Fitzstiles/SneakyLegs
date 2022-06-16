@@ -162,3 +162,11 @@ const products = [
   },
 ];
 export default products;
+
+export const featuredItems = {
+  season: "New season",
+  name: "Adidas YEEZY",
+  image:
+    "https://cdn-images.farfetch-contents.com/16/65/80/89/16658089_32552931_480.jpg",
+  price: 451.0,
+};

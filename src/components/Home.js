@@ -3,6 +3,7 @@ import About from "./About";
 import Categories from "./Categories";
 import Featured from "./Featured";
 import Testimonial from "./Testimonials";
+import { featuredItems } from "./Db";
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       <Hero />
       <About />
       <Categories />
-      <Featured />
+      <Featured featuredItems={featuredItems} />
       <Testimonial />
     </div>
   );
