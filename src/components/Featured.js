@@ -13,7 +13,7 @@ const Featured = ({ featuredItems }) => {
       payload: featuredItems,
     });
   };
-  const [liked, setLiked] = useState(!false);
+  const [liked, setLiked] = useState(false);
   return (
     <div data-aos="fade-up" className="featured" id="featured">
       <h2>FEATURED ITEM</h2>
@@ -39,33 +39,18 @@ const Featured = ({ featuredItems }) => {
         </div>
         <div data-aos="zoom-in" className="right">
           <div className="featured__image">
-            {liked ? (
-              <FavoriteBorderIcon
-                onClick={() => setLiked(false)}
-                style={{
-                  cursor: "pointer",
-                }}
-              />
-            ) : (
-              <FavoriteIcon
-                onClick={() => setLiked(true)}
-                style={{
-                  position: "absolute",
-                  fill: "red",
-                }}
-              />
-            )}
-            <img
-              src={featuredItems.image}
-              style={{
-                width: "50%",
-                height: "auto",
-                borderRadius: "20px",
-                position: "absolute",
-                bottom: "10px",
-              }}
-              alt=""
-            />
+            <div onClick={() => setLiked(!liked)} className="liked__container">
+              {liked ? (
+                <FavoriteIcon
+                  style={{
+                    fill: "red",
+                  }}
+                />
+              ) : (
+                <FavoriteBorderIcon />
+              )}
+            </div>
+            <img src={featuredItems.image} alt="" />
           </div>
           <div className="bottom__image">
             <div className="smallImg__container">

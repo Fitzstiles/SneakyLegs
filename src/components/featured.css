@@ -62,12 +62,23 @@
   margin-top: 20px;
 }
 
-.featured__image svg {
+.featured__image img {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.liked__container {
   position: absolute;
   top: 30px;
   right: 30px;
   cursor: pointer;
-  font-size: 40px;
+}
+
+.liked__container svg {
+  font-size: 40px !important;
 }
 
 .bottom__image {

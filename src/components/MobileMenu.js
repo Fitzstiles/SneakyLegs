@@ -6,15 +6,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
 const MobileMenu = () => {
-  const [open, setopen] = useState(false);
-  const toggleNav = (
-    <MenuIcon onClick={() => setopen(!open)} style={{ fontSize: 50 }} />
-  );
-  const closeNav = (
-    <CloseIcon onClick={() => setopen(!open)} style={{ fontSize: 50 }} />
-  );
-
-  const HandleCloseOnClicked = () => setopen(false);
+  const [open, setOpen] = useState(false);
+  const HandleCloseOnClicked = () => setOpen(false);
   return (
     <Mobilenav>
       <div className="small__container">
@@ -29,7 +22,9 @@ const MobileMenu = () => {
         </Link>
       </div>
 
-      <div className="handleClicks">{open ? closeNav : toggleNav}</div>
+      <div onClick={() => setOpen(!open)} className="handleClicks">
+        {open ? <CloseIcon /> : <MenuIcon />}
+      </div>
 
       {open && (
         <Navlinks mobile={true} HandleCloseOnClicked={HandleCloseOnClicked} />
@@ -87,5 +82,8 @@ const Mobilenav = styled.div`
     right: 10px;
     top: 6px;
     z-index: 99;
+    svg {
+      font-size: 50px;
+    }
   }
 `;

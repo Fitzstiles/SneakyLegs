@@ -28,6 +28,18 @@
     color: white;
 }
 
+.heart__icon {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.heart__icon svg {
+    font-size: 40px;
+}
+
 .product__container {
     display: flex;
     justify-content: center;

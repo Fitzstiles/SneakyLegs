@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const MenCard = ({ filteredPerson }) => {
   const [state, dispatch] = useStateValue();
-  const [liked, setLiked] = useState(!false);
+  const [liked, setLiked] = useState(false);
 
   const addTocart = () => {
     dispatch({
@@ -19,30 +19,17 @@ const MenCard = ({ filteredPerson }) => {
     <div className="productCard__wrapper">
       <div className="productCard__image">
         <img src={filteredPerson.image} alt="" />
-        {liked ? (
-          <FavoriteBorderIcon
-            onClick={() => setLiked(false)}
-            style={{
-              position: "absolute",
-              top: 20,
-              right: 10,
-              cursor: "pointer",
-              fontSize: 30,
-            }}
-          />
-        ) : (
-          <FavoriteIcon
-            onClick={() => setLiked(true)}
-            style={{
-              position: "absolute",
-              top: 20,
-              right: 10,
-              cursor: "pointer",
-              fill: "red",
-              fontSize: 30,
-            }}
-          />
-        )}
+        <div className="heart__icon" onClick={() => setLiked(!liked)}>
+          {liked ? (
+            <FavoriteIcon
+              style={{
+                fill: "red",
+              }}
+            />
+          ) : (
+            <FavoriteBorderIcon />
+          )}
+        </div>
         <p>
           <small style={{ color: "white" }}>$</small>
           {filteredPerson.price}
